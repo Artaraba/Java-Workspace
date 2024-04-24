@@ -1,16 +1,17 @@
-// This program will create a unit when requested by the user
+package unit;
 
-import java.util.Scanner;
+public class Unit {
+	
+	private String unitType = "";
+	private double hitPoints = 0;
+	private double attack = 0;
+	private double defense = 0;
 
-class UnitClass {
-
-  String unitName = "";
-  double hp = 0, attack = 0, defense = 0;
-
-	Worker() {
-		unitName = "Worker";
-		hp = 50;
-		attack = 1;
-		defense = 0;
+	Unit(String unitType){
+		if (unitType == "Worker") {
+			System.out.println("It works");
+		} else {
+			System.out.println("Beat em up");
+		}
 	}
 }
