@@ -8,9 +8,11 @@ public class Robot {
 	public Robot(String name, String unitType) {
 		this.unitName = name;
 		this.unitType = unitType;
-		hp = 50;
-		attack = 1;
-		defense = 0;
+		if (unitType == "Worker") {
+			this.hp = 50;
+		}
+		this.attack = 1;
+		this.defense = 0;
 	}
 
 	public String getName() {
